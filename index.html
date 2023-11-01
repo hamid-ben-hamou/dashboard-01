@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/framework.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- javaScript -->
+	<script type="text/javascript" src="main.js" defer></script>
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="page d-flex">
+		<div class="nav shadow trans z-front" style="">
+			<div class="menu between-flex p-t-20 p-r-15 p-b-20 p-l-15 c-gray ps-r">
+				<h2 class="m-0">Ben-Hamou</h2>
+				<i class="fa-solid fa-bars cursor-p trans" id="menu_bar"></i>
+			</div>
+			<div class="links p-r-15 p-l-15 c-gray">
+				<div class="profile ps-r">
+					<label id="label" class="between-flex">
+						<p>Profile</p>
+						<i class="fa-solid fa-angle-down d-block trans"></i>
+					</label>
+					<ul id="ulOne" class="trans">
+						<li class="d-flex gap-10 align-center"><img src="images/avatar.png">Abd-El-Hamid Ben Hamou</li>
+						<li class="d-flex gap-10 align-center"><i class="fa-solid fa-pen"></i>Profile</li>
+						<li class="d-flex gap-10 align-center"><i class="fa-solid fa-lock"></i>Privacy</li>
+						<li class="d-flex gap-10 align-center"><i class="fa-solid fa-folder"></i>Portfolio</li>
+						<li class="d-flex gap-10 align-center"><i class="fa-solid fa-gear"></i>Settings</li>
+					</ul>
+				</div>
+				<div class="main ps-r">
+					<label id="label" class="between-flex">
+						<p>Main</p>
+						<i class="fa-solid fa-angle-down d-block trans"></i>
+					</label>
+					<ul id="ulOne" class="trans" style="height: 0;">
+						<li class="d-flex gap-10 align-center"><i class="fa-solid fa-pen"></i>Main</li>
+					</ul>
+				</div>
+				<div class="tools ps-r">
+					<label id="label" class="between-flex">
+						<p>Tools</p>
+						<i class="fa-solid fa-angle-down d-block trans"></i>
+					</label>
+					<ul id="ulOne" class="trans" style="height: 0;">
+						<li class="d-flex gap-10 align-center"><i class="fa-solid fa-pen"></i>Tool 1</li>
+					</ul>
+				</div>
+				<div class="info ps-r">
+					<label id="label" class="between-flex">
+						<p>Info</p>
+						<i class="fa-solid fa-angle-down d-block trans"></i>
+					</label>
+					<ul id="ulOne" class="trans" style="height: 0;">
+						<li class="d-flex gap-10 align-center"><i class="fa-solid fa-pen"></i>Info 1</li>
+					</ul>
+				</div>
+				<div class="chaneels ps-r">
+					<label id="label" class="between-flex">
+						<p>Chaneels</p>
+						<i class="fa-solid fa-angle-down d-block trans"></i>
+					</label>
+					<ul id="ulOne" class="trans" style="height: 0;">
+						<li class="d-flex gap-10 align-center"><i class="fa-solid fa-pen"></i>Chaneels 1</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--  -->
+			<div class="shortcuts p-l-15 p-r-15">
+				<li ><span style="background-color: #9897a8;"></span><p>Work</p></li>				
+				<li ><span style="background-color: #8817a8;"></span><p>Looking For Contact</p></li>				
+				<li ><span style="background-color: #42902e;"></span><p>Looking For Something</p></li>				
+				<li ><span style="background-color: #997b28;"></span><p>Search</p></li>				
+				<li ><span style="background-color: #1975a9;"></span><p>Something Dark Side</p></li>				
+			</div>
+
+			<div class="your-amount between-flex ps-a p-l-15 p-r-15 p-t-20 p-b-20 w-full m-t-40 gap-10">
+				<p>$982</p>
+				<a href="#" class="trans scal-h">Add Funds</a>
+			</div>
+		</div>
+		<!-- start dashboard content -->
+		<div class="dashboard">
+			<div class="horizontal-menu d-flex between-flex p-t-20 p-r-15 p-b-20 p-l-15 shadow">
+				<div class="search d-flex gap-10">
+					<i class="fa-solid fa-filter"></i>
+					<input type="text" name="" placeholder="Plaseholder text goes here...">
+					<button class="d-flex"><i class="fa-solid fa-magnifying-glass"></i> <p>Search</p></button>
+				</div>
+				<!-- hide and show menu -->
+				<i class="fa-solid fa-ellipsis-vertical c-gray fo-s-20 p-r-15 p-l-15 d-none" id="h-menu"></i>
+				<!-- hide and show menu -->
+				<div class="start center-flex">
+					<div class="add-check d-flex c-gray">
+						<p><i class="fa-solid fa-plus"></i>Add Contact</p>
+						<i class="fa-solid fa-user-plus"><p>Add Friends</p></i>
+						<i class="fa-solid fa-comment"><p>Add Friends</p></i>
+						<i class="fa-solid fa-bell"><p>Add Friends</p></i>
+					</div>
+					<div class="for-user center-flex c-gray">
+						<div class="name center-flex gap-10">
+							<img src="images/avatar.png">
+							<p>Abd-El-Hamid</p>
+						</div>
+						<i class="fa-solid fa-arrow-right-from-bracket m-l-10"></i>
+					</div>
+				</div>
+			</div>
+			<!-- content -->
+			<div class="content-user d-flex">
+				<div class="content-one d-flex">
+					<div class="news">
+						<h2><i class="fa-solid fa-bolt-lightning"></i>News</h2>
+						<div class="box p-20 rad-10">
+							<div class="topic d-flex gap-15 c-gray">
+								<img src="images/newsImg-1.png" class="rad-cercle">
+								<p>Mobile payments product design case study. What I learned.</p>
+							</div>
+							<div class="row between-flex c-gray">
+								<p>10:32AM</p>
+								<p>READ<i class="fa-solid fa-caret-right"></i></p>
+							</div>
+						</div>
+						<div class="box p-20 rad-10">
+							<div class="topic d-flex gap-15 c-gray">
+								<img src="images/newsImg-2.png" class="rad-cercle">
+								<p>How to use Adobe CC shared libraries and make the most of it?</p>
+							</div>
+							<div class="row between-flex c-gray">
+								<p>4:33AM</p>
+								<p>READ<i class="fa-solid fa-caret-right"></i></p>
+							</div>
+						</div>
+						<div class="box p-20 rad-10">
+							<div class="topic d-flex gap-15 c-gray">
+								<img src="images/newsImg-3.png" class="rad-cercle">
+								<p>8 Non-Digital Tools to Add to Your UX Toolbelt.</p>
+							</div>
+							<div class="row between-flex c-gray">
+								<p>Yesterday</p>
+								<p>READ<i class="fa-solid fa-caret-right"></i></p>
+							</div>
+						</div>
+					</div>
+					<div class="timeline ps-r">
+						<h2><i class="fa-solid fa-flag m-r-5"></i>Timeline</h2>
+						<div class="sort d-flex ps-a c-gray">
+							<p>Sort:</p>
+							<select class="c-gray">
+								<option value="0">All</option>
+								<option>Time</option>
+							</select>
+						</div>
+
+						<div class="box rad-10">
+							<div class="search d-flex between-flex gap-15">
+								<img src="images/avatar.png">
+								<input type="text" name="" placeholder="Write Something...">
+								<i class="fa-solid fa-magnifying-glass"></i>
+								<i class="fa-solid fa-paperclip"></i>
+							</div>
+							<div class="row between-flex p-20 c-gray">
+								<div class="chose d-flex align-center gap-10">
+									<p>Anonymously</p>
+									<select class="c-gray">
+										<option>Who Can See</option>
+										<option>Friends</option>
+										<option>All</option>
+									</select>
+									<select class="c-gray">
+										<option>Channel</option>
+										<option>Channel 1</option>
+										<option>Channel 1</option>
+									</select>
+									<i class="fa-solid fa-location-dot"></i>
+								</div>
+								<i class="fa-solid fa-paper-plane"></i>
+							</div>
+						</div>
+
+						<div class="box-post rad-10 m-t-20 ovlw-h">
+							<div class="topic d-flex align-center gap-10 p-20">
+								<i class="fa-solid fa-chart-simple rad-cercle"></i>
+								<p>Prefered format for domain name: first name hyphen last name or last name first name (without hyphen)</p>
+								<p>4:33AM</p>
+							</div>
+							<div class="the-post p-20">
+								<div class="row between-flex">
+									<p class="imp">i.e. john-smith.com</p>
+									<div class="progress d-flex align-center ovlw-h">
+										<div class="reprisent">
+											<span style="width: 75%;"></span>
+										</div>
+										<p>75 %</p>
+									</div>
+								</div>
+								<div class="row between-flex">
+									<p>i.e. smithJohn.com</p>
+									<div class="progress d-flex align-center ovlw-h">
+										<div class="reprisent">
+											<span style="width: 25%;"></span>
+										</div>
+										<p>25 %</p>
+									</div>
+								</div>
+
+								<a href="#" class="vote">Vote</a>
+								<p>9832 Votes | Final results</p>
+							</div>
+
+							<div class="intraction d-flex gap-20 p-20 c-gray">
+								<li><i class="fa-solid fa-heart trans"></i> Like (<span>3.5</span>k)</li>
+								<li><i class="fa-solid fa-comment trans"></i> Comment (<span>0</span>)</li>
+								<li><i class="fa-solid fa-share trans"></i> Share (<span>632</span>)</li>
+							</div>
+						</div>
+
+						<div class="box-post rad-10 m-t-20 ovlw-h">
+							<div class="topic d-flex align-center gap-10 p-20">
+								<img src="images/avatar-01.png">
+								<p><span>Dennis Sevryukov</span> shared a <span>link</span>. Mobile payments product design </p>
+								<p>12:12PM</p>
+							</div>
+							<div class="the-postN_2 p-20">
+								<div class="row d-flex align-center gap-20">
+									<img src="images/postimg-01.png" class="max-w">
+									<div class="desc">
+										<h3>Mobile payments case study</h3>
+										<p>Build better mobile payment experiences as a product designer.</p>
+										<p class="between-flex"><span>Nov 16, 2016</span><a href="#">nenadmilosevic.co<i class="fa-solid fa-caret-right m-l-10"></i></a></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="intraction d-flex gap-20 p-20 c-gray">
+								<li><i class="fa-solid fa-heart trans"></i> Like (<span>3.5</span>k)</li>
+								<li><i class="fa-solid fa-comment trans"></i> Comment (<span>0</span>)</li>
+								<li><i class="fa-solid fa-share trans"></i> Share (<span>632</span>)</li>
+							</div>
+						</div>
+
+						<div class="box-post rad-10 m-t-20 ovlw-h">
+							<div class="rank d-flex gap-15 align-center p-20">
+								<i><img src="images/monster.png"></i>
+								<h1>8374</h1>
+								<p>You rank in the top 8% for profile views among your connections. #136 out of 1,689 Increased 18% Ins The Last 30 days</p>
+								<img src="images/char.png">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="content-tow">
+					<div class="progress">
+						<p><span>75%</span><br> Complited</p>
+					</div>
+					<div class="to-complite c-gray">
+						<p class="m-b-15">Answer more questions to complete your profile and become a Sup</p>
+						<a href="" class="d-flex gap-15 c-blue-2">Complite Profile<i class="fa-solid fa-arrow-right-long c-gray trans"></i></a>
+					</div>
+
+					<div class="for-you p-t-20 p-b-20">
+						<div class="type between-flex">
+							<h2>Frinds Requests <span>(2)</span></h2>
+							<i class="fa-solid fa-ellipsis"></i>
+						</div>
+						<div class="row d-flex align-center gap-15">
+							<img src="images/friend-01.png">
+							<div class="name">
+								<p>John Smith</p>
+								<p>Confirm Friend <span>+</span></p>
+							</div>
+						</div>
+						<div class="row d-flex align-center gap-15">
+							<img src="images/friend-02.png">
+							<div class="name">
+								<p>Ahmed Sayed</p>
+								<p>Confirm Friend <span>+</span></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="for-you p-t-20 p-b-20">
+						<div class="type between-flex">
+							<h2>Upcoming <span>(23)</span></h2>
+							<i class="fa-solid fa-ellipsis"></i>
+						</div>
+						<div class="row d-flex align-center gap-15">
+							<div class="time center-flex">
+								<p>Nov</p>
+								<p>19</p>
+							</div>
+							<div class="name">
+								<p>Visiting Family<br><span>Hay Masira, Bouizakarn, Morocco</span></p>
+								<p>Going <span>+</span></p>
+							</div>
+						</div>
+						<div class="row d-flex align-center gap-15">
+							<div class="time center-flex">
+								<p>Sep</p>
+								<p>29</p>
+							</div>
+							<div class="name">
+								<p>Client Interview<br><span>Dcheira, Agadir, Morocco</span></p>
+								<p>Going <span>+</span></p>
+							</div>
+						</div>
+						<div class="row d-flex align-center gap-15">
+							<div class="time center-flex">
+								<p>Dec</p>
+								<p>12</p>
+							</div>
+							<div class="name">
+								<p>Trip<br><span>sea, Agadir, Morocco</span></p>
+								<p>Going <span>+</span></p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="for-you p-t-20 p-b-20">
+						<div class="type between-flex">
+							<h2>Private Anvitations <span>(2)</span></h2>
+							<i class="fa-solid fa-ellipsis"></i>
+						</div>
+						<div class="row d-flex align-center gap-15">
+							<img src="images/avatar.png">
+							<div class="name">
+								<p>Mohamed Amine • invited you to Solving A problem On His WebSite <br> <span>sumuha, Alexandria, Egpy</span></p>
+								<p>Confirm Friend <span>+</span></p>
+							</div>
+						</div>
+						<p class="date">10 Nov At 8:30AM</p>
+					</div>
+				</div>
+			</div>
+			<!-- content -->
+		</div>
+	</div>
+</body>
+</html>
