@@ -335,6 +335,11 @@ i{
 	padding: 40px;
 	gap: 30px;
 }
+@media(max-width: 770px) {
+	.content-one{
+		padding: 15px;
+	}
+}
 @media(max-width: 1170px) {
 	.content-one{
 		flex-direction: column;
